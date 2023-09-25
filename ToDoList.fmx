@@ -1,0 +1,60 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 400.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'ADD'
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 36.000000000000000000
+    OnClick = AddButtonClick
+  end
+  object TaskTextBox: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 43.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 246.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 43.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 22.000000000000000000
+    Text = 'Add Your Task :'
+    TabOrder = 2
+  end
+  object TasksListBox: TListBox
+    Position.X = 43.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 246.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = TasksListBoxItemClick
+    Viewport.Width = 242.000000000000000000
+    Viewport.Height = 213.000000000000000000
+  end
+end
