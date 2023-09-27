@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'To Do List'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
@@ -10,41 +10,44 @@ object Form1: TForm1
   DesignerMasterStyle = 0
   object Button1: TButton
     StyledSettings = [Style, FontColor]
-    Position.X = 400.000000000000000000
+    Position.X = 355.000000000000000000
     Position.Y = 104.000000000000000000
-    Size.Width = 105.000000000000000000
-    Size.Height = 41.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 73.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     Text = 'ADD'
     TextSettings.Font.Family = 'Bangers'
-    TextSettings.Font.Size = 36.000000000000000000
+    TextSettings.Font.Size = 48.000000000000000000
     OnClick = AddButtonClick
   end
   object TaskTextBox: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 1
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 22.000000000000000000
     Position.X = 43.000000000000000000
-    Position.Y = 104.000000000000000000
+    Position.Y = 120.000000000000000000
     Size.Width = 246.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
   end
   object Label1: TLabel
     StyledSettings = [Style, FontColor]
     Position.X = 43.000000000000000000
-    Position.Y = 40.000000000000000000
+    Position.Y = 72.000000000000000000
     Size.Width = 169.000000000000000000
     Size.Height = 40.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Family = 'Acme'
-    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.Size = 26.000000000000000000
     Text = 'Add Your Task :'
     TabOrder = 2
   end
   object TasksListBox: TListBox
     Position.X = 43.000000000000000000
-    Position.Y = 192.000000000000000000
+    Position.Y = 240.000000000000000000
     Size.Width = 246.000000000000000000
     Size.Height = 217.000000000000000000
     Size.PlatformDefault = False
@@ -56,5 +59,76 @@ object Form1: TForm1
     OnItemClick = TasksListBoxItemClick
     Viewport.Width = 242.000000000000000000
     Viewport.Height = 213.000000000000000000
+  end
+  object DoneTasksListBox: TListBox
+    Position.X = 331.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 246.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 242.000000000000000000
+    Viewport.Height = 213.000000000000000000
+  end
+  object Label2: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 207.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 28.000000000000000000
+    Text = 'Tasks To Do'
+    TabOrder = 5
+    object Label3: TLabel
+      StyledSettings = [Style, FontColor]
+      Position.X = 320.000000000000000000
+      Position.Y = -8.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Acme'
+      TextSettings.Font.Size = 28.000000000000000000
+      Text = 'Done '#10004#65039
+      TabOrder = 4
+      object Label4: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.Y = -166.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Acme'
+        TextSettings.Font.Size = 28.000000000000000000
+        Text = 'Your Progress '#55357#56844
+        TabOrder = 4
+      end
+    end
+  end
+  object Progress: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 473.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 96.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 26.000000000000000000
+    TabOrder = 6
+    object Label5: TLabel
+      StyledSettings = [Style, FontColor]
+      Position.X = 48.000000000000000000
+      Size.Width = 96.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Bangers'
+      TextSettings.Font.Size = 26.000000000000000000
+      Text = '%'
+      TabOrder = 6
+    end
   end
 end

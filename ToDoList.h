@@ -20,12 +20,20 @@ __published:	// IDE-managed Components
 	TEdit *TaskTextBox;
 	TLabel *Label1;
 	TListBox *TasksListBox;
+	TListBox *DoneTasksListBox;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
+	TLabel *Progress;
+	TLabel *Label5;
 	void __fastcall AddButtonClick(TObject *Sender);
 	void __fastcall TasksListBoxItemClick(TCustomListBox * const Sender, TListBoxItem * const Item);
+
 
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
+    float get_percentage () ;
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TForm1 *Form1;
